@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Front Page</title>
+    <style>
+        body{
+            background: url(./images/svgbackground.webp) ;
+            /* background: auto; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+        .navbar{
+          background-image: url(./images/svgbackground.webp);
+        }
+        .body{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: aliceblue;
+          
+            
+        }
+        .d-flex{
+            padding: 5px;
+            justify-items: center;
+            justify-content: center;
+
+            
+
+        }
+        .carousel{
+         color: aliceblue;
+         width: 400px;
+         height: 226px;
+         margin-left: 415px;
+         align-items: center;
+         justify-items: center;
+         justify-content: center;
+         text-align: bottom;
+         /* border: 2px solid black; */
+         /* background-image: url(./images/svgbackground.webp); */
+        }
+       
+        footer {
+  background-color: #212529; /* Adjust background color if needed */
+  color: white;
+  padding: 1rem;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-end; /* Align content at the bottom */
+}
+
+
+        
+    </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand">Navbar</a> -->
+          <a class="navbar-brand" href="#">
+            <img src="./images/netflixlogo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+            
+          </a>
+          <form class="d-flex" role="search">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Enlish</a></li>
+                  <li><a class="dropdown-item" href="#">Hindi</a></li>
+                  <li><a class="dropdown-item" href="#">French</a></li>
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+              </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-danger ">Sign in</button>
+              </div>
+          </form>
+        </div>
+      </nav>
+
+
+      <!-- <section class="body">
+        <h1>Unlimited movies , TV-Shows and much more...</h1>
+        <h3>Watch Anywhere , Cancel Anytime....</h3>
+        <h6>Ready to watch, Enter your email to create or restart your membership...</h6>
+        <form class="d-flex" role="search">
+            <input type="email" class="form-control my-2" placeholder="Enter your email or registered mobile no."><br><br>
+
+            <button type="button" class="btn btn-danger ">Get Started</button>
+        </form>
+      </section> -->
+      <section class="body">
+        <h1>Unlimited movies , TV-Shows and much more...</h1>
+        <h3>Watch Anywhere , Cancel Anytime....</h3>
+        <h6>Ready to watch, Enter your email to create or restart your membership...</h6>
+        <form class="d-flex flex-column align-items-center">  <input type="email" class="form-control my-2" placeholder="Enter your email or registered mobile no." style="width: 400px;">  
+          <button type="button" class="btn btn-danger ">Get Started</button>
+        </form>
+      </section>
+
+
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./images/movie3.jpg" class="d-inline w-100" alt="..." height="222px">
+                <div class="carousel-caption d-inline d-ms-block">
+                  <h5 style="color: aliceblue;">Friends</h5>
+                  <p style="color: aliceblue;">Season 1 - Season 10</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/movie2.jpg" class="d-inline w-100" alt="...">
+                <div class="carousel-caption d-inline d-ms-block">
+                  <h5 style="color: aliceblue;">Beyond the Universe</h5>
+                  <p style="color: antiquewhite;">Fall deep inside the magical story of Universe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/movie1.jpg" class="d-inline w-100" alt="...">
+                <div class="carousel-caption d-inline d-ms-block">
+                  <h5 style="color: rgb(160, 193, 222);">My best frined ANNE FRANK</h5>
+                  <p style="color: rgb(6, 6, 5);">Watch , How two enemies became bestfriends residing to each other's story.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div><br><br><br><br>
+
+
+
+          <footer class="bg-dark text-white p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Careers</a></li>
+                            <li><a href="#" class="text-white">Privacy</a></li>
+                            <li><a href="#" class="text-white">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Help</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Help Center</a></li>
+                            <li><a href="#" class="text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Add more footer links similarly -->
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</body>
+</html>
